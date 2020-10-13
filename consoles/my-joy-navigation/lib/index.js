@@ -10,7 +10,7 @@ exports.register = async server => {
   let manifest = {};
 
   try {
-    manifest = require('../build/asset-manifest.json');
+    manifest = require('../build/manifest.json');
   } catch (err) {
     if (NODE_ENV === 'production') {
       throw err;
